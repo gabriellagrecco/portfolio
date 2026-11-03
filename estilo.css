@@ -237,15 +237,9 @@ h3{font-size:var(--fs-h3);margin-bottom:var(--space-4)}
 @media (max-width:900px){.regua-grid{grid-template-columns:1fr}.celular{max-width:340px}}
 .cel-anexo{font:500 12px/1.4 var(--font-mono)}
 
-/* Também construí: fluxo vertical do ManyChat */
-.ic-message-circle{--ic:url(https://unpkg.com/lucide-static@0.469.0/icons/message-circle.svg)}
-.ic-file-text{--ic:url(https://unpkg.com/lucide-static@0.469.0/icons/file-text.svg)}
-.ic-user-check{--ic:url(https://unpkg.com/lucide-static@0.469.0/icons/user-check.svg)}
-.ic-route{--ic:url(https://unpkg.com/lucide-static@0.469.0/icons/route.svg)}
+/* Também construí: fluxo do ManyChat no padrão Fluxo do design system (nós neutros: não há IA) */
 .cartoes{align-items:start}
 .cartoes .selo-auto{margin-bottom:var(--space-5)}
-.fluxo-v{list-style:none;padding:0;margin-top:var(--space-5);display:grid;gap:var(--space-5)}
-.fluxo-v li{position:relative;display:flex;align-items:center;gap:var(--space-2);font:400 var(--fs-body-s)/1.35 var(--font-mono);color:var(--text-primary);background:var(--papel-100);border:1px solid var(--papel-300);border-radius:var(--radius-s);padding:8px 10px}
-.fluxo-v li:not(:last-child)::after{content:'';position:absolute;left:18px;bottom:-17px;width:1px;height:16px;background:var(--papel-400)}
-.fluxo-v .ic{color:var(--floresta-600)}
-.fluxo-v li.gatilho .ic{color:var(--terracota-600)}
+.fluxo-ds{display:block;width:100%;height:auto;max-width:360px;margin:var(--space-5) auto 0;background:var(--papel-100);border:1px solid var(--papel-300);border-radius:12px}
+.fluxo-ds .fd-t{font:600 12px/1 var(--font-body);fill:var(--chocolate-900)}
+.fluxo-ds .fd-s{font:400 11px/1 var(--font-mono);fill:var(--papel-600)}
