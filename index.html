@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gabriella Grecco · Applied AI builder</title>
+<meta name="description" content="I build AI systems for the path a lead takes to the first conversation. Before automating each step, I ran it myself.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gabriellagrecco.github.io/portfolio/">
+<meta property="og:title" content="Gabriella Grecco · Applied AI builder">
+<meta property="og:description" content="I build AI systems for the path a lead takes to the first conversation. Before automating each step, I ran it myself.">
+<meta property="og:image" content="https://gabriellagrecco.github.io/portfolio/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script>
+(function(){
+  var q=new URLSearchParams(location.search).get('lang');
+  var nav=(navigator.language||'').toLowerCase().indexOf('pt')===0?'pt':'en';
+  document.documentElement.lang=(q==='pt'||q==='en')?q:nav;
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="estilo.css">
+<link rel="icon" href="logo/favicon-32.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="logo/apple-touch-icon.png">
+</head>
+<body>
+<header class="s-noite">
+  <div class="wrap">
+    <img src="logo/nome-floresta.svg" alt="gabriella grecco" width="152" height="26">
+    <button id="idioma" type="button"><span lang="pt">EN</span><span lang="en">PT</span></button>
+  </div>
+</header>
+<main>
+
+<section id="abertura" class="s-noite">
+  <div class="wrap">
+    <div class="abertura-grid">
+      <div class="cabeca">
+        <p class="rotulo">Gabriella Grecco · Applied AI builder</p>
+        <h1>
+          <span lang="pt">Construo sistemas de IA para o caminho que o lead percorre até a primeira conversa. Antes de automatizar cada etapa, <em>eu operei cada uma.</em></span>
+          <span lang="en">I build AI systems for the path a lead takes to the first conversation. Before automating each step, <em>I ran it myself.</em></span>
+        </h1>
+        <nav class="indice">
+          <p class="rotulo"><span lang="pt">O que construí</span><span lang="en">What I built</span></p>
+          <ol>
+          <li><a href="#agente"><span lang="pt">Agente comercial</span><span lang="en">Sales agent</span></a></li>
+          <li><a href="#regua"><span lang="pt">Régua de cobrança</span><span lang="en">Payment reminders</span></a></li>
+          <li><a href="#regma"><span lang="pt">Regma, SaaS para agências</span><span lang="en">Regma, a SaaS for agencies</span></a></li>
+          <li><a href="#tambem"><span lang="pt">GPT do método de conteúdo</span><span lang="en">Content method GPT</span></a></li>
+          </ol>
+        </nav>
+      </div>
+      <img class="retrato" src="img/gabi-verde.jpg" width="1000" height="1501" alt="Retrato de Gabriella Grecco">
+    </div>
+  </div>
+</section>
+
+<section id="agente" class="s-floresta">
+  <div class="wrap">
+    <div class="cabeca">
+      <p class="rotulo"><span lang="pt">Caso 01 · Agente comercial</span><span lang="en">Case 01 · Sales agent</span> <span class="selo-ia"><span lang="pt">Sistema de IA</span><span lang="en">AI system</span></span></p>
+      <ol class="fio">
+        <li><span lang="pt">Atração</span><span lang="en">Attraction</span></li>
+        <li aria-current="step"><span lang="pt">Primeiro contato</span><span lang="en">First contact</span></li>
+        <li aria-current="step"><span lang="pt">Qualificação</span><span lang="en">Qualification</span></li>
+        <li><span lang="pt">Conexão</span><span lang="en">Connection</span></li>
+        <li aria-current="step"><span lang="pt">Retomada</span><span lang="en">Re-engagement</span></li>
+      </ol>
+      <h2><span lang="pt">Da primeira mensagem à reunião</span><span lang="en">From first message to meeting</span></h2>
+      <p class="lide">
+        <span lang="pt">Ele conduz a conversa no WhatsApp do primeiro contato até a decisão. Faz perguntas no método NEPQ para entender a dor e o momento do lead, identifica o produto que encaixa e trata as objeções no caminho. No produto de alto ticket, qualifica até o ponto em que vale uma conversa com a equipe, convida para a call e pergunta o melhor horário; na hora de fechar a data, passa para uma pessoa. No produto vendido por link, explica tudo e envia o link de pagamento.</span>
+        <span lang="en">It runs the WhatsApp conversation from first contact to decision. It asks NEPQ-style questions to understand the lead's pain and timing, finds the product that fits and handles objections along the way. For the high-ticket product, it qualifies until a call with the team is worth it, invites the lead and asks for the best time; when it comes to setting the date, it hands over to a person. For the product sold by link, it explains everything and sends the payment link.</span>
+      </p>
+      <p class="lide lide-2">
+        <span lang="pt">Primeiro uso: reativar leads parados na base. Em cinco semanas, o agente conduziu 177 conversas, levou 24 leads até a qualificação e passou 12 para a equipe. Custo de IA: R$104 no total, cerca de R$0,59 por conversa.</span>
+        <span lang="en">First use: reactivating dormant leads in the CRM. Over five weeks, the agent held 177 conversations, brought 24 leads to qualification and handed 12 to the team. AI cost: R$104 in total, about R$0.59 per conversation.</span>
+      </p>
+    </div>
+
+    <div id="reprodutor"></div>
+
+    <div class="bloco">
+      <h3><span lang="pt">Como ele é montado</span><span lang="en">How it's put together</span></h3>
+      <div class="fatos">
+        <p><strong>18</strong><span lang="pt">blocos de instrução</span><span lang="en">instruction blocks</span></p>
+        <p><strong>8</strong><span lang="pt">ferramentas ligadas ao CRM e ao WhatsApp</span><span lang="en">tools wired to the CRM and WhatsApp</span></p>
+        <p><strong>9</strong><span lang="pt">mapeamentos de CRM</span><span lang="en">CRM mappings</span></p>
+        <p><strong>16</strong><span lang="pt">versões publicadas</span><span lang="en">published versions</span></p>
+      </div>
+      <p class="nota"><span lang="pt">Construído no Clint, o CRM da operação.</span><span lang="en">Built on Clint, the operation's CRM.</span></p>
+    </div>
+
+    <div class="bloco">
+      <h3><span lang="pt">Cinco decisões de projeto</span><span lang="en">Five design decisions</span></h3>
+      <ol class="decisoes">
+        <li>
+          <strong><span lang="pt">Conhecimento separado de comportamento.</span><span lang="en">Knowledge kept apart from behavior.</span></strong>
+          <span lang="pt">Produto, preço, objeções e materiais ficam em blocos próprios, fora das regras de conversa. Mudar a turma ou o preço não mexe em como o agente conduz.</span>
+          <span lang="en">Product, pricing, objections and materials live in their own blocks, outside the conversation rules. Changing a cohort or a price doesn't touch how the agent leads the conversation.</span>
+        </li>
+        <li>
+          <strong><span lang="pt">O que foge do comercial tem regra própria.</span><span lang="en">Anything outside sales has its own rules.</span></strong>
+          <span lang="pt">Um bloco define o escopo e outro traz exemplos. Nesses casos o agente não improvisa: acolhe e chama a equipe.</span>
+          <span lang="en">One block defines the scope, another gives examples. In those cases the agent doesn't improvise: it acknowledges the person and calls the team.</span>
+        </li>
+        <li>
+          <strong><span lang="pt">Uma trava antes do convite.</span><span lang="en">A gate before the invite.</span></strong>
+          <span lang="pt">O agente só oferece a conversa com a equipe quando cinco critérios estão claros: aderência, dor, impacto, objetivo e prioridade.</span>
+          <span lang="en">The agent only offers a call with the team once five criteria are clear: fit, pain, impact, goal and priority.</span>
+        </li>
+        <li>
+          <strong><span lang="pt">Continuidade.</span><span lang="en">Continuity.</span></strong>
+          <span lang="pt">Antes de responder, ele lê o histórico do contato. Quem já conversou não recebe a apresentação de novo.</span>
+          <span lang="en">Before replying, it reads the contact's history. Someone who already talked to it doesn't get the intro again.</span>
+        </li>
+        <li>
+          <strong><span lang="pt">Follow-up antes de a janela fechar.</span><span lang="en">Follow-up before the window closes.</span></strong>
+          <span lang="pt">Se o lead não responde a última mensagem, o agente volta a chamar antes de completar 24 horas. Depois disso, o WhatsApp só aceita template aprovado.</span>
+          <span lang="en">If a lead doesn't answer the last message, the agent reaches out again before 24 hours pass. After that, WhatsApp only accepts an approved template.</span>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="regua" class="s-papel">
+  <div class="wrap">
+    <div class="cabeca">
+      <p class="rotulo"><span lang="pt">Caso 02 · Régua de cobrança</span><span lang="en">Case 02 · Payment reminders</span> <span class="selo-auto"><span lang="pt">Automação</span><span lang="en">Automation</span></span></p>
+      <h2><span lang="pt">Cobrança que avisa antes de vencer</span><span lang="en">Reminders before the due date</span></h2>
+      <p class="lide">
+        <span lang="pt">Uma régua de cobrança no WhatsApp: avisa antes do vencimento, envia o código do Pix ou do boleto quando a pessoa toca no botão e registra quem confirmou o pagamento. São dois fluxos no n8n, publicados.</span>
+        <span lang="en">A payment reminder flow on WhatsApp: it warns before the due date, sends the Pix or bank slip code when the person taps a button, and records who confirmed payment. Two flows in n8n, both published.</span>
+      </p>
+    </div>
+
+    <div class="regua-grid">
+      <figure class="celular">
+        <div class="cel-topo"><span class="cel-avatar" aria-hidden="true"></span><p><b>Instituto Travessia</b><small><span lang="pt">conta comercial</span><span lang="en">business account</span></small></p></div>
+        <ol class="cel-msgs">
+          <li class="cel-empresa">
+            <p><span lang="pt">Oi, Bianca! A parcela 3 de 12 do seu programa vence no dia 10/11. Escolha abaixo como prefere pagar.</span><span lang="en">Hi Bianca! Installment 3 of 12 of your program is due on Nov 10. Choose below how you'd like to pay.</span></p>
+            <span class="cel-hora">09:00</span>
+            <span class="cel-botoes"><span><span lang="pt">Código do Pix</span><span lang="en">Pix code</span></span><span><span lang="pt">Código do boleto</span><span lang="en">Bank slip code</span></span><span><span lang="pt">Já paguei</span><span lang="en">I've paid</span></span></span>
+            <span class="cel-etq"><span lang="pt">Fluxo 1 · envia o template</span><span lang="en">Flow 1 · sends the template</span></span>
+          </li>
+          <li class="cel-pessoa"><span lang="pt">Código do Pix</span><span lang="en">Pix code</span><span class="cel-hora">09:12</span></li>
+          <li class="cel-empresa">
+            <p><span lang="pt">Aqui está o Pix copia e cola da parcela 3. É só copiar e colar no app do seu banco.</span><span lang="en">Here is the Pix copy-and-paste code for installment 3. Just paste it into your banking app.</span></p>
+            <span class="cel-hora">09:12</span>
+          </li>
+          <li class="cel-empresa cel-codigo">
+            <code>00020126580014br.gov.bcb.pix0136a1b2c3d4-0000-4000-8000-0000000000005204000053039865802BR5919INSTITUTO TRAVESSIA6009SAO PAULO62070503***6304E2CA</code>
+            <span class="cel-hora">09:12</span>
+            <span class="cel-etq"><span lang="pt">Fluxo 2 · código numa mensagem só, para copiar</span><span lang="en">Flow 2 · the code on its own, easy to copy</span></span>
+          </li>
+          <li class="cel-pessoa"><span lang="pt">Já paguei</span><span lang="en">I've paid</span><span class="cel-hora">14:30</span></li>
+          <li class="cel-empresa">
+            <p><span lang="pt">Que bom! Me envia o comprovante por aqui, por favor, para darmos baixa na parcela.</span><span lang="en">Great! Please send the receipt here so we can close the installment.</span></p>
+            <span class="cel-hora">14:30</span>
+            <span class="cel-etq"><span lang="pt">Fluxo 2 registra o aviso; a equipe pede o comprovante</span><span lang="en">Flow 2 logs the notice; the team asks for the receipt</span></span>
+          </li>
+          <li class="cel-pessoa cel-anexo"><span lang="pt">comprovante-parcela-3.pdf</span><span lang="en">receipt-installment-3.pdf</span><span class="cel-hora">14:34</span>
+          </li>
+        </ol>
+        <figcaption><span lang="pt">Simulação com dados fictícios.</span><span lang="en">Simulation with fictional data.</span></figcaption>
+      </figure>
+      <div class="fluxos">
+        <div class="fluxo">
+          <p class="rotulo"><i class="ic ic-workflow" aria-hidden="true"></i><span lang="pt">Fluxo 1 · Envio diário</span><span lang="en">Flow 1 · Daily send</span></p>
+          <ol>
+            <li class="gatilho"><i class="ic ic-clock" aria-hidden="true"></i><span lang="pt">Todo dia às 9h</span><span lang="en">Every day at 9am</span></li>
+            <li><i class="ic ic-table" aria-hidden="true"></i><span lang="pt">Lê parcelas, cadastro e pagamentos</span><span lang="en">Reads installments, records and payments</span></li>
+            <li><i class="ic ic-git-branch" aria-hidden="true"></i><span lang="pt">Decide quem recebe aviso</span><span lang="en">Decides who gets a reminder</span></li>
+            <li><i class="ic ic-database" aria-hidden="true"></i><span lang="pt">Busca o contato no CRM</span><span lang="en">Looks up the contact in the CRM</span></li>
+            <li><i class="ic ic-pen-line" aria-hidden="true"></i><span lang="pt">Monta a mensagem</span><span lang="en">Builds the message</span></li>
+            <li><i class="ic ic-send" aria-hidden="true"></i><span lang="pt">Envia o template no WhatsApp</span><span lang="en">Sends the WhatsApp template</span></li>
+            <li><i class="ic ic-list-checks" aria-hidden="true"></i><span lang="pt">Registra no log</span><span lang="en">Writes to the log</span></li>
+          </ol>
+        </div>
+        <div class="fluxo">
+          <p class="rotulo"><i class="ic ic-workflow" aria-hidden="true"></i><span lang="pt">Fluxo 2 · Respostas</span><span lang="en">Flow 2 · Replies</span></p>
+          <ol>
+            <li class="gatilho"><i class="ic ic-webhook" aria-hidden="true"></i><span lang="pt">Recebe a resposta</span><span lang="en">Receives the reply</span></li>
+            <li><i class="ic ic-table" aria-hidden="true"></i><span lang="pt">Lê parcelas, cadastro e pagamentos</span><span lang="en">Reads installments, records and payments</span></li>
+            <li><i class="ic ic-pen-line" aria-hidden="true"></i><span lang="pt">Monta a resposta</span><span lang="en">Builds the reply</span></li>
+            <li><i class="ic ic-git-branch" aria-hidden="true"></i><span lang="pt">É aviso de pagamento?</span><span lang="en">Is it a payment notice?</span></li>
+            <li class="ramo"><span><i class="ic ic-table" aria-hidden="true"></i><span lang="pt">Sim: registra na planilha</span><span lang="en">Yes: logs it in the sheet</span></span><span><i class="ic ic-repeat" aria-hidden="true"></i><span lang="pt">Não: envia as mensagens, uma de cada vez</span><span lang="en">No: sends the messages one at a time</span></span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="colunas">
+      <div>
+        <h3><span lang="pt">Com o quê</span><span lang="en">Built with</span></h3>
+        <p><span lang="pt">n8n, Google Sheets, templates do WhatsApp pela API do CRM e Python para transformar PDFs em dados.</span><span lang="en">n8n, Google Sheets, WhatsApp templates through the CRM API, and Python to turn PDFs into data.</span></p>
+      </div>
+      <div>
+        <h3><span lang="pt">O que fica com gente</span><span lang="en">What stays human</span></h3>
+        <p><span lang="pt">A conferência e a renegociação. Quando a pessoa avisa que pagou, a equipe pede o comprovante e dá baixa. Quando alguém precisa de outro acordo, a régua para e uma pessoa responsável pelo comercial assume a conversa.</span><span lang="en">Checking and renegotiating. When someone says they have paid, the team asks for the receipt and closes the installment. When someone needs a new arrangement, the flow stops and a person from the sales team takes over.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="regma" class="s-papel s-elevada">
+  <div class="wrap">
+    <div class="cabeca">
+      <p class="rotulo"><span lang="pt">Caso 03 · Regma</span><span lang="en">Case 03 · Regma</span></p>
+      <h2><span lang="pt">A agência inteira num lugar só</span><span lang="en">The whole agency in one place</span></h2>
+      <p class="lide">
+        <span lang="pt">Agência de marketing trabalha espalhada: planejamento num lugar, calendário em outro, aprovação do cliente perdida numa conversa de WhatsApp. O Regma junta CRM, editorial, aprovação de conteúdo, WhatsApp, e-mail e automações. O cliente da agência aprova o post pelo celular, por um link.</span>
+        <span lang="en">Marketing agencies work scattered: planning in one place, the calendar in another, client approval lost in a WhatsApp thread. Regma brings CRM, editorial, content approval, WhatsApp, email and automations together. The agency's client approves posts on their phone, through a link.</span>
+      </p>
+    </div>
+
+    <div class="fatos fatos-papel">
+      <p><strong>59</strong><span lang="pt">modelos de dados</span><span lang="en">data models</span></p>
+      <p><strong>~70</strong><span lang="pt">rotas de API</span><span lang="en">API routes</span></p>
+      <p><strong>1</strong><span lang="pt">pessoa, com agentes de código</span><span lang="en">person, with coding agents</span></p>
+      <p><strong>v1</strong><span lang="pt">em implantação na primeira operação real</span><span lang="en">rolling out at its first real operation</span></p>
+    </div>
+
+    <ol class="decisoes decisoes-papel">
+      <li>
+        <strong><span lang="pt">O cliente da agência não é usuário da plataforma.</span><span lang="en">The agency's client is not a platform user.</span></strong>
+        <span lang="pt">Ele entra num portal com sessão própria, separado do painel. A fronteira está na arquitetura, não numa checagem de permissão repetida em cada tela.</span>
+        <span lang="en">They enter a portal with its own session, separate from the dashboard. The boundary lives in the architecture, not in a permission check repeated on every screen.</span>
+      </li>
+      <li>
+        <strong><span lang="pt">Aprovação pelo WhatsApp, não por e-mail.</span><span lang="en">Approval over WhatsApp, not email.</span></strong>
+        <span lang="pt">Cliente de agência não abre e-mail nem aprende ferramenta nova. A notificação com link direto resolve a etapa em que o processo travava.</span>
+        <span lang="en">Agency clients don't open email or learn new tools. A notification with a direct link fixes the step where the process used to stall.</span>
+      </li>
+      <li>
+        <strong><span lang="pt">Servidor de WhatsApp próprio, decidido pela margem.</span><span lang="en">Own WhatsApp server, chosen for margin.</span></strong>
+        <span lang="pt">Sessão de WhatsApp não sobrevive em serverless, e provedor pago cobra por número. Um servidor próprio segura dezenas de números por custo fixo.</span>
+        <span lang="en">A WhatsApp session doesn't survive serverless, and paid providers charge per number. A self-hosted server holds dozens of numbers at a fixed cost.</span>
+      </li>
+    </ol>
+
+    <p class="stack-linha">Next.js · TypeScript · PostgreSQL · Prisma · Supabase · Vercel · Claude API · Evolution API</p>
+    <p><a class="link-seta" href="https://github.com/gabriellagrecco/regma-case-study"><span lang="pt">O código é privado. A arquitetura e as decisões estão no estudo de caso no GitHub</span><span lang="en">The code is private. The architecture and decisions are in the case study on GitHub</span> →</a></p>
+  </div>
+</section>
+
+<section id="tambem" class="s-papel s-afundada">
+  <div class="wrap">
+    <div class="cabeca">
+      <h2><span lang="pt">Outras construções</span><span lang="en">Other builds</span></h2>
+    </div>
+    <div class="cartoes">
+      <article>
+        <p class="selo-ia"><span lang="pt">Sistema de IA</span><span lang="en">AI system</span></p>
+        <ol class="fio">
+          <li aria-current="step"><span lang="pt">Atração</span><span lang="en">Attraction</span></li>
+          <li><span lang="pt">Primeiro contato</span><span lang="en">First contact</span></li>
+          <li><span lang="pt">Qualificação</span><span lang="en">Qualification</span></li>
+          <li><span lang="pt">Conexão</span><span lang="en">Connection</span></li>
+          <li><span lang="pt">Retomada</span><span lang="en">Re-engagement</span></li>
+        </ol>
+        <h3><span lang="pt">GPT do método de conteúdo</span><span lang="en">Content method GPT</span></h3>
+        <p><span lang="pt">O método de conteúdo da operação virou a base de referência de um GPT, que propõe pautas e ângulos dentro do método.</span><span lang="en">The operation's content method became the reference base for a GPT that suggests topics and angles within the method.</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="origem" class="s-noite">
+  <div class="wrap">
+    <div class="estreito">
+      <div>
+        <div class="cabeca">
+          <h2><span lang="pt">Onde aprendi o negócio</span><span lang="en">Where I learned the business</span></h2>
+        </div>
+        <ol class="decisoes">
+          <li>
+            <strong><span lang="pt">Dona de negócio.</span><span lang="en">Business owner.</span></strong>
+            <span lang="pt">Cinco anos com clínica própria, liderando equipe e operação.</span>
+            <span lang="en">Five years running my own clinic, leading the team and the operation.</span>
+          </li>
+          <li>
+            <strong><span lang="pt">Conteúdo.</span><span lang="en">Content.</span></strong>
+            <span lang="pt">Liderei a estratégia orgânica de uma operação que gerou R$520 mil em três meses de aberturas de carrinho, sem tráfego pago.</span>
+            <span lang="en">I led the organic strategy of an operation that generated R$520k in three months of enrollment windows, with no paid traffic.</span>
+          </li>
+          <li>
+            <strong><span lang="pt">Comercial.</span><span lang="en">Sales.</span></strong>
+            <span lang="pt">Qualifiquei e fechei vendas de alto ticket como SDR e closer, antes de construir o agente que automatiza a primeira parte desse caminho.</span>
+            <span lang="en">I qualified and closed high-ticket sales as an SDR and closer, before building the agent that automates the first part of that path.</span>
+          </li>
+        </ol>
+        <p class="nota"><span lang="pt">Hoje sou Head de Marketing na Mentoria Voe Alto, onde construí o agente, o GPT e a régua.</span><span lang="en">Today I'm Head of Marketing at Mentoria Voe Alto, where I built the agent, the GPT and the payment reminders.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="como" class="s-papel">
+  <div class="wrap">
+    <div class="estreito">
+      <div>
+        <div class="cabeca">
+          <h2><span lang="pt">Como eu construo</span><span lang="en">How I build</span></h2>
+          <p class="lide"><span lang="pt">Construo com agentes de código. Eu defino o problema, as regras e a arquitetura, e testo antes de colocar no ar.</span><span lang="en">I build with coding agents. I define the problem, the rules and the architecture, and I test before anything goes live.</span></p>
+        </div>
+        <dl class="stack">
+          <dt><span lang="pt">IA</span><span lang="en">AI</span></dt>
+          <dd><span lang="pt">Claude API · OpenAI · agentes no Clint · GPTs personalizados</span><span lang="en">Claude API · OpenAI · Clint agents · custom GPTs</span></dd>
+          <dt><span lang="pt">Automação</span><span lang="en">Automation</span></dt>
+          <dd>n8n · ManyChat · Zapier · WhatsApp API</dd>
+          <dt><span lang="pt">Produto</span><span lang="en">Product</span></dt>
+          <dd>Next.js · TypeScript · Supabase · PostgreSQL · Prisma · Vercel · GitHub</dd>
+          <dt><span lang="pt">Aquisição</span><span lang="en">Acquisition</span></dt>
+          <dd>Meta Ads · Google Ads · GTM · Google Analytics</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="s-floresta">
+  <div class="wrap">
+    <div class="cabeca">
+      <h2><span lang="pt">Contato</span><span lang="en">Contact</span></h2>
+      <p class="lide"><span lang="pt">Aberta a vagas de IA aplicada.</span><span lang="en">Open to applied AI roles.</span></p>
+    </div>
+    <ul class="contatos">
+      <li><a href="mailto:gabriella-grecco@hotmail.com"><span class="rotulo">E-mail</span>gabriella-grecco@hotmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/gabriellagrecco"><span class="rotulo">LinkedIn</span>linkedin.com/in/gabriellagrecco</a></li>
+      <li><a href="https://github.com/gabriellagrecco"><span class="rotulo">GitHub</span>github.com/gabriellagrecco</a></li>
+    </ul>
+    <p class="rodape">© 2026 Gabriella Grecco</p>
+  </div>
+</section>
+
+</main>
+<script>
+document.getElementById('idioma').addEventListener('click',function(){
+  var novo=document.documentElement.lang==='pt'?'en':'pt';
+  document.documentElement.lang=novo;
+  var u=new URL(location.href);u.searchParams.set('lang',novo);history.replaceState(null,'',u);
+  document.dispatchEvent(new Event('idioma'));
+});
+</script>
+<script type="module">
+import { montar } from './reprodutor.js';
+montar(document.getElementById('reprodutor'));
+</script>
+</body>
+</html>
