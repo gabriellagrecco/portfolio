@@ -243,3 +243,7 @@ h3{font-size:var(--fs-h3);margin-bottom:var(--space-4)}
 .fluxo-ds{display:block;box-sizing:border-box;width:100%;height:auto;max-width:376px;padding:8px;margin:var(--space-5) auto 0;background:var(--papel-100);border:1px solid var(--papel-300);border-radius:12px}
 .fluxo-ds .fd-t{font:600 12px/1 var(--font-body);fill:var(--chocolate-900)}
 .fluxo-ds .fd-s{font:400 11px/1 var(--font-mono);fill:var(--papel-600)}
+.usos{list-style:none;padding:0;margin-top:var(--space-4);display:grid;gap:var(--space-3)}
+.usos li{line-height:var(--lh-relaxed);color:var(--text-secondary);padding-left:18px;position:relative}
+.usos li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:var(--radius-pixel);border:1px solid var(--papel-500)}
+.usos strong{color:var(--text-primary);font-weight:600}
