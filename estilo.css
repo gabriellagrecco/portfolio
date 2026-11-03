@@ -2,7 +2,7 @@
 :root{
   --noite:#0B1A15;--noite-2:#10241D;--noite-line:rgba(241,233,223,.14);--noite-text-2:rgba(241,233,223,.66);
   --floresta:#193F32;--floresta-100:#DFE9E3;--floresta-600:#336B52;--floresta-700:#24543F;--floresta-900:#0F2A21;
-  --papel:#F1E9DF;--papel-50:#FAF6F1;--papel-100:#F1E9DF;--papel-200:#E6DACB;--papel-300:#D3C3B0;--papel-500:#7D6A5F;--papel-600:#5A4840;
+  --papel:#F1E9DF;--papel-50:#FAF6F1;--papel-100:#F1E9DF;--papel-200:#E6DACB;--papel-300:#D3C3B0;--papel-400:#A8968A;--papel-500:#7D6A5F;--papel-600:#5A4840;
   --chocolate-900:#2C1A12;
   --terracota-400:#E08A55;--terracota-600:#B85A2E;--terracota-700:#A04C25;--terracota-clara:#E08A55;
   --lima:#C8E05A;--lima-100:#EEF5CF;
@@ -236,3 +236,16 @@ h3{font-size:var(--fs-h3);margin-bottom:var(--space-4)}
 .celular figcaption{padding:10px 6px 4px;font-size:11px;color:var(--noite-text-2);text-align:center}
 @media (max-width:900px){.regua-grid{grid-template-columns:1fr}.celular{max-width:340px}}
 .cel-anexo{font:500 12px/1.4 var(--font-mono)}
+
+/* Também construí: fluxo vertical do ManyChat */
+.ic-message-circle{--ic:url(https://unpkg.com/lucide-static@0.469.0/icons/message-circle.svg)}
+.ic-file-text{--ic:url(https://unpkg.com/lucide-static@0.469.0/icons/file-text.svg)}
+.ic-user-check{--ic:url(https://unpkg.com/lucide-static@0.469.0/icons/user-check.svg)}
+.ic-route{--ic:url(https://unpkg.com/lucide-static@0.469.0/icons/route.svg)}
+.cartoes{align-items:start}
+.cartoes .selo-auto{margin-bottom:var(--space-5)}
+.fluxo-v{list-style:none;padding:0;margin-top:var(--space-5);display:grid;gap:var(--space-5)}
+.fluxo-v li{position:relative;display:flex;align-items:center;gap:var(--space-2);font:400 var(--fs-body-s)/1.35 var(--font-mono);color:var(--text-primary);background:var(--papel-100);border:1px solid var(--papel-300);border-radius:var(--radius-s);padding:8px 10px}
+.fluxo-v li:not(:last-child)::after{content:'';position:absolute;left:18px;bottom:-17px;width:1px;height:16px;background:var(--papel-400)}
+.fluxo-v .ic{color:var(--floresta-600)}
+.fluxo-v li.gatilho .ic{color:var(--terracota-600)}
