@@ -240,6 +240,6 @@ h3{font-size:var(--fs-h3);margin-bottom:var(--space-4)}
 /* Também construí: fluxo do ManyChat no padrão Fluxo do design system (nós neutros: não há IA) */
 .cartoes{align-items:start}
 .cartoes .selo-auto{margin-bottom:var(--space-5)}
-.fluxo-ds{display:block;width:100%;height:auto;max-width:360px;margin:var(--space-5) auto 0;background:var(--papel-100);border:1px solid var(--papel-300);border-radius:12px}
+.fluxo-ds{display:block;box-sizing:border-box;width:100%;height:auto;max-width:376px;padding:8px;margin:var(--space-5) auto 0;background:var(--papel-100);border:1px solid var(--papel-300);border-radius:12px}
 .fluxo-ds .fd-t{font:600 12px/1 var(--font-body);fill:var(--chocolate-900)}
 .fluxo-ds .fd-s{font:400 11px/1 var(--font-mono);fill:var(--papel-600)}
